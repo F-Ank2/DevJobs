@@ -1,0 +1,25 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "Portal DevJobs con Node.js, Handlebars Moongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index,js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F-Ank2/DevJobs.git"
+  },
+  "author": "Francisco Garcia Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/F-Ank2/DevJobs/issues"
+  },
+  "homepage": "https://github.com/F-Ank2/DevJobs#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
