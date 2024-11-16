@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/F-Ank2/DevJobs#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
