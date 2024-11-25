@@ -1,16 +1,21 @@
 const express = require('express');
+const exphbs = require('express-handlebars');
 const path = require('path');
 const router = require('./routes');
-const exphbs = require('express-handlebars');
 
 const app = express();
 
-app.engine('handlebars', exphbs.engine({
+//Enable Handlebar as view
+
+app.engine('handlebars', 
+    exphbs.engine({
     defaultLayout: 'layout',
-    extname: '.handlebars'
+    extname: '.handlebars'  
 }));
 
-app.set('view engine', 'handlebars');
+app.set('view engine', 'handlebars'); 
+
+//static files 
 
 app.use(express.static(path.join(__dirname, 'public')));
 

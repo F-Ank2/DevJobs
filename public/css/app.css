@@ -29,11 +29,15 @@ h2 {
 h3 {
     font-size: 2.8rem;
 }
-.contenedor {
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.separador {
+.separator {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.separator {
     padding-bottom: 2rem;
     padding-top:2rem;
     border-bottom: 1px solid #272727;
@@ -51,17 +55,17 @@ h3 {
     display: block;
     border:none;
 }
-.btn-verde {
+.btn-green {
     background-color: #00C897;
 }
-.btn-verde:hover {
+.btn-green:hover {
     background-color: rgb(10, 155, 119);
 }
 
-.btn-azul {
+.btn-blue {
     background-color: #00A4B6;
 }
-.btn-azul:hover {
+.btn-blue:hover {
     background-color: rgb(3, 133, 148);
 }
 
@@ -97,30 +101,30 @@ h3 {
     margin-bottom: 5rem;
 }
 
-.nombre-sitio {
+.name-site {
     display: flex;
     justify-content: space-between;
 }
-.nombre-sitio a {
+.name-site a {
     color: white;
     text-decoration: none;
 }
-.buscador {
+.navegation {
     padding-top: 1rem;
     display: flex;
     justify-content: flex-end;
     flex: 1;
 }
-.buscador form {
+.navegation form {
     flex:1;
     position: relative;
 }
 @media (min-width: 768px) {
-    .buscador form {
+    .navegation form {
         flex: 0 0 40%;
     }
 }
-.buscador input[type="text"] {
+.navegation input[type="text"] {
     background-color: rgba(255,255,255,.1);
     width: 100%;
     border: none;
@@ -130,7 +134,7 @@ h3 {
     color: white;
     font-size: 1.2rem;
 }
-.buscador input[type="submit"] {
+.navegation input[type="submit"] {
     display: block;
     text-indent: -9999px;
     height: 30px;
@@ -145,61 +149,61 @@ h3 {
     background-repeat: no-repeat;
     background-position: center center;
 }
-.buscador input[type="submit"]:hover {
+.navegation input[type="submit"]:hover {
     cursor: pointer;
 }
 
 @media (min-width:768px) {
     .candidato,
-    .vacante {
+    .vacancies {
         display: flex;
     }
-    .caja {
+    .box {
         flex: 1;
     }
-    .caja:first-of-type{
+    .box:first-of-type{
         flex: 2;
     }
 }
 .candidato,
-.vacante {
+.vacancies {
     padding: 3rem 0;
     border-bottom: 1px solid #272727;
 }
 .candidato,
-.vacante:last-of-type{
+.vacancies:last-of-type{
     border:none;
 }
-.caja {
+.box {
     padding: .5rem 0;
 }
-.caja p {
+.box p {
     color: #ffffff;
 }
-.contrato {
+.contract {
     text-transform: capitalize;
 }
-.caja .puesto,
-.caja .etiqueta {
+.box .place,
+.box .tag {
     font-weight: 700;
     color: #616065;
     font-size: 2.6rem;
     margin: 0;
     text-align: left;
 }
-.caja .etiqueta {
+.box .tag {
     margin:1rem 0 0 0;
 }
-.caja .nombre { 
+.box .name { 
     font-size: 2.4rem; 
     margin: .5rem 0; 
     text-align: left;
 }
-.caja .btn {
+.box .btn {
     text-align: center;
 }
 
-.centrar-vertical{
+.vertical-center{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +213,7 @@ h3 {
     justify-content: center;
 }
 
-.vacante-contenedor h2 {
+.vacancies-contenedor h2 {
     color: #616065;
     font-size: 2.4rem;
 }
@@ -217,22 +221,22 @@ h3 {
     margin-bottom: 6rem;
 }
 @media (min-width:768px){
-    .vacante-contenedor {
+    .vacancies-contenedor {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .vacante-contenedor main{
+    .vacancies-contenedor main{
         flex: 0 0 60%;
     }
-    .vacante-contenedor aside {
+    .vacancies-contenedor aside {
         flex: 0 0 calc(40% - 2rem);
     }
 }
-.vacante-descripcion h1 {
+.vacancies-descripcion h1 {
     line-height: 1.4;
 }
-.vacante-descripcion *{
+.vacancies-descripcion *{
     color: white!important;
     line-height: 2.2;
 }
@@ -240,7 +244,7 @@ h3 {
     color: white;
 }
 .skills li,
-.vacante-descripcion div  {
+.vacancies-descripcion div  {
     font-size: 1.8rem;
     line-height: 2.4;
 }
@@ -430,7 +434,7 @@ p.candidatos {
     margin-right: 2rem;
 }
 .lista-candidatos p,
-.lista-vacantes p {
+.vacancies-listntes p {
     color: white;
     text-align: center;
 }
@@ -479,7 +483,7 @@ p.candidatos {
 
 
 
-/** Biografia Vacante **/
+/** Biografia vacancies **/
 .info-reclutador h2 {
     color: #616065;
     font-size: 2.4rem;
