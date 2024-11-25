@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="icon" href="/img/icono.png" type="image/x-icon">
+    <title>DevJobs</title>
+</head>
+<body>
+    
+    <div class="name-site container">
+        <h1>
+            <a href="/">DevJobs</a>
+        </h1>
+            {{#if bar}}
+                <div class="navegation">
+                    <Form action="#">
+                        <input type="text" class="find">
+                        <input type="submit" value="Find">   
+                     </Form>
+                </div>
+            {{/if}}
+    </div>
+
+    <div class="site-header container separator">
+        <h2>{{pageName}}</h2>
+
+        {{#if tagLine}}
+            <p class="tagline">{{tagLine}}</p>
+        {{/if}}
+            <a href="/vacancies/new" class="btn btn-blue">
+                ¡Create a new vacancie now!
+            </a>
+        {{#if bottom}}
+
+        {{/if}}
+    </div>
+
+    <div class="principal-content container">
+        {{{body}}}
+    </div>
+
+</body>
+</html>
